@@ -9,7 +9,7 @@
         "elements"   : [
                         {
                         "identifier": "gender",
-                        "type": "singleChoiceText",
+                        "type": "multipleChoiceText",
                         "text": "What is your gender?",
                         "items": [
                                   {

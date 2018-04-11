@@ -37,6 +37,8 @@
 		CF9907631FB0C379006149E7 /* MEDL.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF9907621FB0C379006149E7 /* MEDL.xcassets */; };
 		CF9907651FB0C3F1006149E7 /* MEDL.json in Resources */ = {isa = PBXBuildFile; fileRef = CF9907641FB0C3F1006149E7 /* MEDL.json */; };
 		CFD434132007F1AE00CD7178 /* SetttingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD434122007F1AD00CD7178 /* SetttingsViewController.swift */; };
+		F41E42C3207DD3A500893393 /* food_survey_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F41E42C2207DD3A500893393 /* food_survey_A.json */; };
+		F45EF040207DD5D4003075CF /* food_survey_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F45EF03F207DD5D4003075CF /* food_survey_B.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		CF9907621FB0C379006149E7 /* MEDL.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MEDL.xcassets; sourceTree = "<group>"; };
 		CF9907641FB0C3F1006149E7 /* MEDL.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MEDL.json; sourceTree = "<group>"; };
 		CFD434122007F1AD00CD7178 /* SetttingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetttingsViewController.swift; sourceTree = "<group>"; };
+		F41E42C2207DD3A500893393 /* food_survey_A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food_survey_A.json; sourceTree = "<group>"; };
+		F45EF03F207DD5D4003075CF /* food_survey_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food_survey_B.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,8 @@
 			children = (
 				CF99075B1FB0BB72006149E7 /* sample.json */,
 				CF99075F1FB0BE6D006149E7 /* yadl_full.json */,
+				F41E42C2207DD3A500893393 /* food_survey_A.json */,
+				F45EF03F207DD5D4003075CF /* food_survey_B.json */,
 				CF9907641FB0C3F1006149E7 /* MEDL.json */,
 				CF0A6E561FB15323005ADC8F /* notification.json */,
 				CF0A6E581FB15422005ADC8F /* yadl_spot.json */,
@@ -328,6 +334,7 @@
 				CF9907401FAFFAAE006149E7 /* LaunchScreen.storyboard in Resources */,
 				0A6601AB206C4FAF005F5198 /* LocationSurvey.json in Resources */,
 				CF698344201BA9DF00552801 /* WelcomeStoryboard.storyboard in Resources */,
+				F45EF040207DD5D4003075CF /* food_survey_B.json in Resources */,
 				0A2AA9CB206AA89600566074 /* signin.json in Resources */,
 				CF0A6E571FB15323005ADC8F /* notification.json in Resources */,
 				CF99075C1FB0BB72006149E7 /* sample.json in Resources */,
@@ -338,6 +345,7 @@
 				CF0A6E551FB14FEE005ADC8F /* Onboarding.storyboard in Resources */,
 				0A660195206BF264005F5198 /* LoginStoryboard.storyboard in Resources */,
 				CF0A6E591FB15422005ADC8F /* yadl_spot.json in Resources */,
+				F41E42C3207DD3A500893393 /* food_survey_A.json in Resources */,
 				CF99073B1FAFFAAE006149E7 /* Main.storyboard in Resources */,
 				0A6601A3206C2E79005F5198 /* demographics.json in Resources */,
 			);

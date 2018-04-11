@@ -30,19 +30,27 @@ class MainViewController: UIViewController{
         super.viewDidLoad()
         
         self.store = RSStore()
-        
-                
+        self.store.set(value: true as NSSecureCoding, key: "runA")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let shouldDoSpot = self.store.get(key: "shouldDoSpot") as! Bool
-  
-        if (shouldDoSpot) {
-            
-            self.launchSpotAssessment()
-        }
+//        let shouldDoSpot = self.store.get(key: "shouldDoSpot") as! Bool
+//
+//        if (shouldDoSpot) {
+//
+//            self.launchSpotAssessment()
+//        }
+//
+//        self.shouldDoFullAssessment()
+        let runA = self.store.get(key: "runA") as! Bool
         
-        self.shouldDoFullAssessment()
+        if runA {
+            self.launchFoodSurveyAssessment(type: "A")
+            self.store.set(value: false as NSSecureCoding, key: "runA")
+        } else {
+            self.launchFoodSurveyAssessment(type: "B")
+            self.store.set(value: true as NSSecureCoding, key: "runA")
+        }
     }
     
     func shouldDoFullAssessment () {
@@ -76,7 +84,11 @@ class MainViewController: UIViewController{
     func launchFullAssessment () {
         self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "yadl_full")
         self.launchActivity(forItem: fullAssessmentItem)
-        
+    }
+    
+    func launchFoodSurveyAssessment (type: String) {
+        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "food_survey_" + type)
+        self.launchActivity(forItem: fullAssessmentItem)
     }
     
     func launchActivity(forItem item: RSAFScheduleItem) {

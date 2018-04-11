@@ -1,17 +1,17 @@
 {
     "type": "recurring",
-    "identifier": "yadl_full",
+    "identifier": "food_survey_A",
     "title": "YADL Full Intake Survey",
-    "guid": "yadl_full-1",
+    "guid": "food_survey_A-1",
     "activity": {
         "type"      : "elementList",
-        "identifier": "yadl_full_assessment",
+        "identifier": "food_survey_A_assessment",
         "optional":false,
         "elements"   : [
                         {
                         "identifier"   : "introduction",
                         "type"         : "instruction",
-                        "title"        : "Welcome to the Food Assessment",
+                        "title"        : "Welcome to the Food Assessment (Version A)",
                         "text"         : "Please check all that apply"
                         },
                         
@@ -28,12 +28,12 @@
                                    {
                                    "text":"fast food",
                                    "value":"2",
-                                   "color":"#258313"
+                                   "color":"#F0743E"
                                    },
                                    {
                                    "text":"no breakfast",
                                    "value":"3",
-                                   "color":"#258313"
+                                   "color":"#D20005"
                                    }
                                    ],
                         "imageExtension": "png",
@@ -46,7 +46,7 @@
                                   ]
                         },
                         
-
+                        
                         {
                         "identifier": "FOOD_LUNCH_A",
                         "type": "YADLFullAssessment",
@@ -207,27 +207,27 @@
                          {
                          "transform": "YADLFullRaw",
                          "inputMapping": [
-                                          {"parameter":"ShortWalk", "stepIdentifier":"yadl_full.ShortWalk"},
-                                          {"parameter":"WalkingUpStairs", "stepIdentifier":"yadl_full.WalkingUpStairs"},
-                                          {"parameter":"Shopping", "stepIdentifier":"yadl_full.Shopping"},
-                                          {"parameter":"Lifting", "stepIdentifier":"yadl_full.Lifting"},
-                                          {"parameter":"Housework", "stepIdentifier":"yadl_full.Housework"},
-                                          {"parameter":"Dressing", "stepIdentifier":"yadl_full.Dressing"},
-                                          {"parameter":"BedToChair", "stepIdentifier":"yadl_full.BedToChair"},
-
+                                          {"parameter":"ShortWalk", "stepIdentifier":"food_survey_A.ShortWalk"},
+                                          {"parameter":"WalkingUpStairs", "stepIdentifier":"food_survey_A.WalkingUpStairs"},
+                                          {"parameter":"Shopping", "stepIdentifier":"food_survey_A.Shopping"},
+                                          {"parameter":"Lifting", "stepIdentifier":"food_survey_A.Lifting"},
+                                          {"parameter":"Housework", "stepIdentifier":"food_survey_A.Housework"},
+                                          {"parameter":"Dressing", "stepIdentifier":"food_survey_A.Dressing"},
+                                          {"parameter":"BedToChair", "stepIdentifier":"food_survey_A.BedToChair"},
                                           
-                                          {"parameter": "FOOD_BREAKFAST_A", "stepIdentifier": "yadl_full.FOOD_BREAKFAST_A"},
-                                          {"parameter": "FOOD_BREAKFAST_B", "stepIdentifier": "yadl_full.FOOD_BREAKFAST_B"},
-                                          {"parameter": "FOOD_DINNER_A", "stepIdentifier": "yadl_full.FOOD_DINNER_A"},
-                                          {"parameter": "FOOD_DINNER_B", "stepIdentifier": "yadl_full.FOOD_DINNER_B"},
-                                          {"parameter": "FOOD_FRUIT_A", "stepIdentifier": "yadl_full.FOOD_FRUIT_A"},
-                                          {"parameter": "FOOD_FRUIT_B", "stepIdentifier": "yadl_full.FOOD_FRUIT_B"},
-                                          {"parameter": "FOOD_LUNCH_A", "stepIdentifier": "yadl_full.FOOD_LUNCH_A"},
-                                          {"parameter": "FOOD_LUNCH_B", "stepIdentifier": "yadl_full.FOOD_LUNCH_B"},
-                                          {"parameter": "FOOD_SNACK_A", "stepIdentifier": "yadl_full.FOOD_SNACK_A"},
-                                          {"parameter": "FOOD_SNACK_B", "stepIdentifier": "yadl_full.FOOD_SNACK_B"},
-                                          {"parameter": "FOOD_WORKOUT_A", "stepIdentifier": "yadl_full.FOOD_WORKOUT_A"},
-                                          {"parameter": "FOOD_WORKOUT_B", "stepIdentifier": "yadl_full.FOOD_WORKOUT_B"},
+                                          
+                                          {"parameter": "FOOD_BREAKFAST_A", "stepIdentifier": "food_survey_A.FOOD_BREAKFAST_A"},
+                                          {"parameter": "FOOD_BREAKFAST_B", "stepIdentifier": "food_survey_A.FOOD_BREAKFAST_B"},
+                                          {"parameter": "FOOD_DINNER_A", "stepIdentifier": "food_survey_A.FOOD_DINNER_A"},
+                                          {"parameter": "FOOD_DINNER_B", "stepIdentifier": "food_survey_A.FOOD_DINNER_B"},
+                                          {"parameter": "FOOD_FRUIT_A", "stepIdentifier": "food_survey_A.FOOD_FRUIT_A"},
+                                          {"parameter": "FOOD_FRUIT_B", "stepIdentifier": "food_survey_A.FOOD_FRUIT_B"},
+                                          {"parameter": "FOOD_LUNCH_A", "stepIdentifier": "food_survey_A.FOOD_LUNCH_A"},
+                                          {"parameter": "FOOD_LUNCH_B", "stepIdentifier": "food_survey_A.FOOD_LUNCH_B"},
+                                          {"parameter": "FOOD_SNACK_A", "stepIdentifier": "food_survey_A.FOOD_SNACK_A"},
+                                          {"parameter": "FOOD_SNACK_B", "stepIdentifier": "food_survey_A.FOOD_SNACK_B"},
+                                          {"parameter": "FOOD_WORKOUT_A", "stepIdentifier": "food_survey_A.FOOD_WORKOUT_A"},
+                                          {"parameter": "FOOD_WORKOUT_B", "stepIdentifier": "food_survey_A.FOOD_WORKOUT_B"},
                                           
                                           {"parameter": "schemaID", "constant":{
                                           "namespace": "Cornell",
@@ -237,10 +237,10 @@
                                           }
                                           ]
                          }
-                                          
-
-    
-    
-    
-    ]
+                         
+                         
+                         
+                         
+                         
+                         ]
 }

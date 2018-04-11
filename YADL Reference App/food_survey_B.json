@@ -1,22 +1,22 @@
 {
     "type": "recurring",
-    "identifier": "yadl_full",
+    "identifier": "food_survey_B",
     "title": "YADL Full Intake Survey",
-    "guid": "yadl_full-1",
+    "guid": "food_survey_B-1",
     "activity": {
         "type"      : "elementList",
-        "identifier": "yadl_full_assessment",
+        "identifier": "food_survey_B_assessment",
         "optional":false,
         "elements"   : [
                         {
                         "identifier"   : "introduction",
                         "type"         : "instruction",
-                        "title"        : "Welcome to the Food Assessment",
+                        "title"        : "Welcome to the Food Assessment (Version B)",
                         "text"         : "Please check all that apply"
                         },
                         
                         {
-                        "identifier": "FOOD_BREAKFAST_A",
+                        "identifier": "FOOD_BREAKFAST_B",
                         "type": "YADLFullAssessment",
                         "text": "Which best describes your breakfast?",
                         "choices":[
@@ -28,27 +28,27 @@
                                    {
                                    "text":"fast food",
                                    "value":"2",
-                                   "color":"#258313"
+                                   "color":"#F0743E"
                                    },
                                    {
                                    "text":"no breakfast",
                                    "value":"3",
-                                   "color":"#258313"
+                                   "color":"#D20005"
                                    }
                                    ],
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_BREAKFAST_A",
-                                  "description":"FOOD_BREAKFAST_A",
-                                  "identifier":"FOOD_BREAKFAST_A"
+                                  "imageTitle":"FOOD_BREAKFAST_B",
+                                  "description":"FOOD_BREAKFAST_B",
+                                  "identifier":"FOOD_BREAKFAST_B"
                                   }
                                   ]
                         },
                         
-
+                        
                         {
-                        "identifier": "FOOD_LUNCH_A",
+                        "identifier": "FOOD_LUNCH_B",
                         "type": "YADLFullAssessment",
                         "text": "Which best describes your lunch?",
                         "choices":[
@@ -71,15 +71,15 @@
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_LUNCH_A",
-                                  "description":"FOOD_LUNCH_A",
-                                  "identifier":"FOOD_LUNCH_A"
+                                  "imageTitle":"FOOD_LUNCH_B",
+                                  "description":"FOOD_LUNCH_B",
+                                  "identifier":"FOOD_LUNCH_B"
                                   }
                                   ]
                         },
                         
                         {
-                        "identifier": "FOOD_DINNER_A",
+                        "identifier": "FOOD_DINNER_B",
                         "type": "YADLFullAssessment",
                         "text": "Which best describes your dinner?",
                         "choices":[
@@ -102,15 +102,15 @@
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_DINNER_A",
-                                  "description":"FOOD_DINNER_A",
-                                  "identifier":"FOOD_DINNER_A"
+                                  "imageTitle":"FOOD_DINNER_B",
+                                  "description":"FOOD_DINNER_B",
+                                  "identifier":"FOOD_DINNER_B"
                                   }
                                   ]
                         },
                         
                         {
-                        "identifier": "FOOD_FRUIT_A",
+                        "identifier": "FOOD_FRUIT_B",
                         "type": "YADLFullAssessment",
                         "text": "How many servings of fruit have you eaten today?",
                         "choices":[
@@ -133,15 +133,15 @@
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_FRUIT_A",
-                                  "description":"FOOD_FRUIT_A",
-                                  "identifier":"FOOD_FRUIT_A"
+                                  "imageTitle":"FOOD_FRUIT_B",
+                                  "description":"FOOD_FRUIT_B",
+                                  "identifier":"FOOD_FRUIT_B"
                                   }
                                   ]
                         },
                         
                         {
-                        "identifier": "FOOD_SNACK_A",
+                        "identifier": "FOOD_SNACK_B",
                         "type": "YADLFullAssessment",
                         "text": "How many servings of unhealthy snack have you eaten today?",
                         "choices":[
@@ -164,15 +164,15 @@
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_SNACK_A",
-                                  "description":"FOOD_SNACK_A",
-                                  "identifier":"FOOD_SNACK_A"
+                                  "imageTitle":"FOOD_SNACK_B",
+                                  "description":"FOOD_SNACK_B",
+                                  "identifier":"FOOD_SNACK_B"
                                   }
                                   ]
                         },
                         
                         {
-                        "identifier": "FOOD_WORKOUT_A",
+                        "identifier": "FOOD_WORKOUT_B",
                         "type": "YADLFullAssessment",
                         "text": "Describe your activity today",
                         "choices":[
@@ -195,9 +195,9 @@
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_WORKOUT_A",
-                                  "description":"FOOD_WORKOUT_A",
-                                  "identifier":"FOOD_WORKOUT_A"
+                                  "imageTitle":"FOOD_WORKOUT_B",
+                                  "description":"FOOD_WORKOUT_B",
+                                  "identifier":"FOOD_WORKOUT_B"
                                   }
                                   ]
                         }
@@ -207,27 +207,27 @@
                          {
                          "transform": "YADLFullRaw",
                          "inputMapping": [
-                                          {"parameter":"ShortWalk", "stepIdentifier":"yadl_full.ShortWalk"},
-                                          {"parameter":"WalkingUpStairs", "stepIdentifier":"yadl_full.WalkingUpStairs"},
-                                          {"parameter":"Shopping", "stepIdentifier":"yadl_full.Shopping"},
-                                          {"parameter":"Lifting", "stepIdentifier":"yadl_full.Lifting"},
-                                          {"parameter":"Housework", "stepIdentifier":"yadl_full.Housework"},
-                                          {"parameter":"Dressing", "stepIdentifier":"yadl_full.Dressing"},
-                                          {"parameter":"BedToChair", "stepIdentifier":"yadl_full.BedToChair"},
-
+                                          {"parameter":"ShortWalk", "stepIdentifier":"food_survey_A.ShortWalk"},
+                                          {"parameter":"WalkingUpStairs", "stepIdentifier":"food_survey_A.WalkingUpStairs"},
+                                          {"parameter":"Shopping", "stepIdentifier":"food_survey_A.Shopping"},
+                                          {"parameter":"Lifting", "stepIdentifier":"food_survey_A.Lifting"},
+                                          {"parameter":"Housework", "stepIdentifier":"food_survey_A.Housework"},
+                                          {"parameter":"Dressing", "stepIdentifier":"food_survey_A.Dressing"},
+                                          {"parameter":"BedToChair", "stepIdentifier":"food_survey_A.BedToChair"},
                                           
-                                          {"parameter": "FOOD_BREAKFAST_A", "stepIdentifier": "yadl_full.FOOD_BREAKFAST_A"},
-                                          {"parameter": "FOOD_BREAKFAST_B", "stepIdentifier": "yadl_full.FOOD_BREAKFAST_B"},
-                                          {"parameter": "FOOD_DINNER_A", "stepIdentifier": "yadl_full.FOOD_DINNER_A"},
-                                          {"parameter": "FOOD_DINNER_B", "stepIdentifier": "yadl_full.FOOD_DINNER_B"},
-                                          {"parameter": "FOOD_FRUIT_A", "stepIdentifier": "yadl_full.FOOD_FRUIT_A"},
-                                          {"parameter": "FOOD_FRUIT_B", "stepIdentifier": "yadl_full.FOOD_FRUIT_B"},
-                                          {"parameter": "FOOD_LUNCH_A", "stepIdentifier": "yadl_full.FOOD_LUNCH_A"},
-                                          {"parameter": "FOOD_LUNCH_B", "stepIdentifier": "yadl_full.FOOD_LUNCH_B"},
-                                          {"parameter": "FOOD_SNACK_A", "stepIdentifier": "yadl_full.FOOD_SNACK_A"},
-                                          {"parameter": "FOOD_SNACK_B", "stepIdentifier": "yadl_full.FOOD_SNACK_B"},
-                                          {"parameter": "FOOD_WORKOUT_A", "stepIdentifier": "yadl_full.FOOD_WORKOUT_A"},
-                                          {"parameter": "FOOD_WORKOUT_B", "stepIdentifier": "yadl_full.FOOD_WORKOUT_B"},
+                                          
+                                          {"parameter": "FOOD_BREAKFAST_A", "stepIdentifier": "food_survey_A.FOOD_BREAKFAST_A"},
+                                          {"parameter": "FOOD_BREAKFAST_B", "stepIdentifier": "food_survey_A.FOOD_BREAKFAST_B"},
+                                          {"parameter": "FOOD_DINNER_A", "stepIdentifier": "food_survey_A.FOOD_DINNER_A"},
+                                          {"parameter": "FOOD_DINNER_B", "stepIdentifier": "food_survey_A.FOOD_DINNER_B"},
+                                          {"parameter": "FOOD_FRUIT_A", "stepIdentifier": "food_survey_A.FOOD_FRUIT_A"},
+                                          {"parameter": "FOOD_FRUIT_B", "stepIdentifier": "food_survey_A.FOOD_FRUIT_B"},
+                                          {"parameter": "FOOD_LUNCH_A", "stepIdentifier": "food_survey_A.FOOD_LUNCH_A"},
+                                          {"parameter": "FOOD_LUNCH_B", "stepIdentifier": "food_survey_A.FOOD_LUNCH_B"},
+                                          {"parameter": "FOOD_SNACK_A", "stepIdentifier": "food_survey_A.FOOD_SNACK_A"},
+                                          {"parameter": "FOOD_SNACK_B", "stepIdentifier": "food_survey_A.FOOD_SNACK_B"},
+                                          {"parameter": "FOOD_WORKOUT_A", "stepIdentifier": "food_survey_A.FOOD_WORKOUT_A"},
+                                          {"parameter": "FOOD_WORKOUT_B", "stepIdentifier": "food_survey_A.FOOD_WORKOUT_B"},
                                           
                                           {"parameter": "schemaID", "constant":{
                                           "namespace": "Cornell",
@@ -237,10 +237,10 @@
                                           }
                                           ]
                          }
-                                          
-
-    
-    
-    
-    ]
+                         
+                         
+                         
+                         
+                         
+                         ]
 }
