@@ -38,6 +38,8 @@
 		CF9907651FB0C3F1006149E7 /* MEDL.json in Resources */ = {isa = PBXBuildFile; fileRef = CF9907641FB0C3F1006149E7 /* MEDL.json */; };
 		CFD434132007F1AE00CD7178 /* SetttingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD434122007F1AD00CD7178 /* SetttingsViewController.swift */; };
 		F41E42C3207DD3A500893393 /* food_survey_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F41E42C2207DD3A500893393 /* food_survey_A.json */; };
+		F43504222086D2A100420A9B /* FileUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43504212086D2A100420A9B /* FileUploader.swift */; };
+		F435042720879EFC00420A9B /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F435042620879EFC00420A9B /* ORKESerialization.m */; };
 		F45EF040207DD5D4003075CF /* food_survey_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F45EF03F207DD5D4003075CF /* food_survey_B.json */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,10 @@
 		CF9907641FB0C3F1006149E7 /* MEDL.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MEDL.json; sourceTree = "<group>"; };
 		CFD434122007F1AD00CD7178 /* SetttingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetttingsViewController.swift; sourceTree = "<group>"; };
 		F41E42C2207DD3A500893393 /* food_survey_A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food_survey_A.json; sourceTree = "<group>"; };
+		F43504212086D2A100420A9B /* FileUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUploader.swift; sourceTree = "<group>"; };
+		F435042520879EFC00420A9B /* YADL Reference App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YADL Reference App-Bridging-Header.h"; sourceTree = "<group>"; };
+		F435042620879EFC00420A9B /* ORKESerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKESerialization.m; sourceTree = "<group>"; };
+		F435042820879F2800420A9B /* ORKESerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKESerialization.h; sourceTree = "<group>"; };
 		F45EF03F207DD5D4003075CF /* food_survey_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food_survey_B.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +164,7 @@
 				0A2AA9CC206AB95900566074 /* OMHTransformer.swift */,
 				0A660196206BF28D005F5198 /* LoginViewController.swift */,
 				0A6601A4206C3062005F5198 /* DefaultRawOMHDatapoint.swift */,
+				F435042320879E7F00420A9B /* Spark */,
 				0A6601A6206C36F3005F5198 /* DemographicsSurveyResult.swift */,
 				0A6601A8206C3D11005F5198 /* DemographicsDailyResult+OMHDatapoint.swift */,
 			);
@@ -219,6 +226,17 @@
 				0A6601AA206C4FAF005F5198 /* LocationSurvey.json */,
 			);
 			name = json;
+			sourceTree = "<group>";
+		};
+		F435042320879E7F00420A9B /* Spark */ = {
+			isa = PBXGroup;
+			children = (
+				F43504212086D2A100420A9B /* FileUploader.swift */,
+				F435042620879EFC00420A9B /* ORKESerialization.m */,
+				F435042820879F2800420A9B /* ORKESerialization.h */,
+				F435042520879EFC00420A9B /* YADL Reference App-Bridging-Header.h */,
+			);
+			name = Spark;
 			sourceTree = "<group>";
 		};
 		F57CF85DFB26D1C30A9D7ED4 /* Pods */ = {
@@ -496,10 +514,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF0A6E4F1FB14EE8005ADC8F /* OnboardingViewController.swift in Sources */,
+				F435042720879EFC00420A9B /* ORKESerialization.m in Sources */,
 				CF9907361FAFFAAD006149E7 /* AppDelegate.swift in Sources */,
 				CF0A6E511FB14EFA005ADC8F /* MainViewController.swift in Sources */,
 				CF698340201BA9B100552801 /* WelcomeViewController.swift in Sources */,
 				0A2AA9CD206AB95900566074 /* OMHTransformer.swift in Sources */,
+				F43504222086D2A100420A9B /* FileUploader.swift in Sources */,
 				0A6601A9206C3D11005F5198 /* DemographicsDailyResult+OMHDatapoint.swift in Sources */,
 				0A6601A5206C3062005F5198 /* DefaultRawOMHDatapoint.swift in Sources */,
 				CFD434132007F1AE00CD7178 /* SetttingsViewController.swift in Sources */,
@@ -645,12 +665,15 @@
 			baseConfigurationReference = 9AF64A9EB551EB5DA7C41AA4 /* Pods-YADL Reference App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = E8AN4S9FD3;
 				INFOPLIST_FILE = "YADL Reference App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.tech.foundry.ResearchSuiteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YADL Reference App/YADL Reference App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -662,12 +685,14 @@
 			baseConfigurationReference = 7B1068343AC502CA63245454 /* Pods-YADL Reference App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = E8AN4S9FD3;
 				INFOPLIST_FILE = "YADL Reference App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.tech.foundry.ResearchSuiteDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YADL Reference App/YADL Reference App-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

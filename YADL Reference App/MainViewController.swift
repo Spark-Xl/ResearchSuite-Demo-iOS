@@ -21,6 +21,7 @@ class MainViewController: UIViewController{
     var fullAssessmentItem: RSAFScheduleItem!
     var spotAssessmentItem: RSAFScheduleItem!
     var pamAssessmentItem: RSAFScheduleItem!
+    let fileUploader = FileUploader.sharedUploader
     
     @IBOutlet
     var tableView: UITableView!
@@ -42,6 +43,7 @@ class MainViewController: UIViewController{
 //        }
 //
 //        self.shouldDoFullAssessment()
+//        fileUploader.uploadJson(json: ["hello": "123", "what": "testing"])
         let runA = self.store.get(key: "runA") as! Bool
         
         if runA {
@@ -118,45 +120,60 @@ class MainViewController: UIViewController{
 
                 }
                 
-                if(item.identifier == "yadl_full"){
+                if(item.identifier == "food_survey_A"){
                     
                     // save date that full assessment was completed
                     
                     let date = Date()
                     
-                    self?.store.setValueInState(value: date as NSSecureCoding, forKey: "fullDate")
-                    self?.store.setValueInState(value: true as NSSecureCoding, forKey: "fullFileExists")
+//                    self?.store.setValueInState(value: date as NSSecureCoding, forKey: "fullDate")
+//                    self?.store.setValueInState(value: true as NSSecureCoding, forKey: "fullFileExists")
                     
                     // save for spot assessment
                     
-                    if let difficultActivities: [String]? = taskResult.results?.flatMap({ (stepResult) in
-                        if let stepResult = stepResult as? ORKStepResult,
-                            stepResult.identifier.hasPrefix("yadl_full."),
-                            let choiceResult = stepResult.firstResult as? ORKChoiceQuestionResult,
-                            let answer = choiceResult.choiceAnswers?.first as? String,
-                            answer == "hard" || answer == "moderate"
-                        {
-                            var tempResult = stepResult.identifier
-                            let index = tempResult.index(tempResult.startIndex, offsetBy: 10)
-                            tempResult = tempResult.substring(from:index)
-                            
-                            
-                            NSLog(tempResult)
-                            
-                            return tempResult.replacingOccurrences(of: "yadl_full.", with: "")
-                            
-                        }
-                        return nil
-                    }) {
-                        if let answers = difficultActivities {
-                            self?.store.setValueInState(value: answers as NSSecureCoding, forKey: "activity_identifiers")
-       
-                            // save when completed full assessment
-                            
-                            
-                        }
-                    }
+//                    if let difficultActivities: [String]? = taskResult.results?.flatMap({ (stepResult) in
+//                        if let stepResult = stepResult as? ORKStepResult,
+//                            stepResult.identifier.hasPrefix("yadl_full."),
+//                            let choiceResult = stepResult.firstResult as? ORKChoiceQuestionResult,
+//                            let answer = choiceResult.choiceAnswers?.first as? String,
+//                            answer == "hard" || answer == "moderate"
+//                        {
+//                            var tempResult = stepResult.identifier
+//                            let index = tempResult.index(tempResult.startIndex, offsetBy: 10)
+//                            tempResult = tempResult.substring(from:index)
+//
+//
+//                            NSLog(tempResult)
+//
+//                            return tempResult.replacingOccurrences(of: "yadl_full.", with: "")
+//
+//                        }
+//                        return nil
+//                    }) {
+//                        if let answers = difficultActivities {
+//                            self?.store.setValueInState(value: answers as NSSecureCoding, forKey: "activity_identifiers")
+//
+//                            // save when completed full assessment
+//
+//
+//                        }
+//                    }
                     
+//                    if let answers: [String]? = taskResult.results?.flatMap({ (stepResult) in
+//                        if let stepResult = stepResult as? ORKStepResult {
+//
+//                            return ""
+//                        }
+//                    }) {
+//
+//                    }
+                    do {
+                        let jsonResult = try ORKESerializer.jsonObject(for: taskResult)
+                        self?.fileUploader.uploadJson(json: jsonResult)
+                    }
+                    catch {
+                        print(error)
+                    }
                 }
                 
             }

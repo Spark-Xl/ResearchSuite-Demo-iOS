@@ -106,6 +106,7 @@ PODS:
   - SwiftyMarkdown (0.5.1)
 
 DEPENDENCIES:
+  - Alamofire
   - LS2SDK (from `https://github.com/jdkizer9/LS2SDK-iOS`, tag `0.5.1`)
   - OMHClient (from `https://github.com/ResearchSuite/OMHClient-ios`)
   - ResearchKit
@@ -163,6 +164,6 @@ SPEC CHECKSUMS:
   SwiftyGif: d36c6dfb52e2ca1e48fe349d225f50ec4123ec85
   SwiftyMarkdown: 743af3e87931391bc4836b825fec3d98785b2e3a
 
-PODFILE CHECKSUM: e14de7b7a27d9002cc3d4f5b3043ea47c094c227
+PODFILE CHECKSUM: f325e8cdf4e0d5c950f8a903989fbfbf544d8822
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.4.0.rc.1

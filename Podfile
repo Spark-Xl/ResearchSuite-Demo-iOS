@@ -14,7 +14,7 @@ target 'YADL Reference App' do
   pod "ResearchKit"
   pod "ResearchSuiteTaskBuilder"
   pod "ResearchSuiteAppFramework"
-
+  pod 'Alamofire'
     
     
 
