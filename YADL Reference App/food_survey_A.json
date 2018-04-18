@@ -16,31 +16,68 @@
                         },
                         
                         {
-                        "identifier": "FOOD_BREAKFAST_A",
+                        "identifier": "bananas_2",
+                        "type": "multipleChoiceText",
+                        "text": "Did you have a banana today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "bananas",
                         "type": "YADLFullAssessment",
-                        "text": "Which best describes your breakfast?",
+                        "text": "Did you have a banana today?",
                         "choices":[
                                    {
-                                   "text":"nutritious meal",
-                                   "value":"1",
+                                   "text":"Yes",
+                                   "value":"0",
                                    "color":"#258313"
                                    },
                                    {
-                                   "text":"fast food",
-                                   "value":"2",
+                                   "text":"No",
+                                   "value":"1",
                                    "color":"#F0743E"
-                                   },
-                                   {
-                                   "text":"no breakfast",
-                                   "value":"3",
-                                   "color":"#D20005"
                                    }
                                    ],
                         "imageExtension": "png",
                         "items": [
                                   {
-                                  "imageTitle":"FOOD_BREAKFAST_A",
-                                  "description":"FOOD_BREAKFAST_A",
+                                  "imageTitle":"bananas",
+                                  "description":"Bananas",
+                                  "identifier":"FOOD_BREAKFAST_A"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "hamburger",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have a hamburger today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "png",
+                        "items": [
+                                  {
+                                  "imageTitle":"hamburger",
+                                  "description":"hamburger",
                                   "identifier":"FOOD_BREAKFAST_A"
                                   }
                                   ]
@@ -229,6 +266,7 @@
                                           {"parameter": "FOOD_WORKOUT_A", "stepIdentifier": "food_survey_A.FOOD_WORKOUT_A"},
                                           {"parameter": "FOOD_WORKOUT_B", "stepIdentifier": "food_survey_A.FOOD_WORKOUT_B"},
                                           
+                                          {"parameter": "bananas", "stepIdentifier": "food_survey_A.bananas"},
                                           {"parameter": "schemaID", "constant":{
                                           "namespace": "Cornell",
                                           "name": "yadl-full-assessment-dance",
