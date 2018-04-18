@@ -26,19 +26,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="9Rx-a7-XZI"/>
                                 </constraints>
-                                <color key="barTintColor" red="0.2176931201" green="0.6016751615" blue="0.87471367799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.54509803921568623" green="0.84313725490196079" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="ResearchSuite" id="Ovh-H9-HUS">
-                                        <barButtonItem key="rightBarButtonItem" title="Settings" id="KIT-8j-ExT">
-                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            <connections>
-                                                <segue destination="H4T-J1-Smr" kind="presentation" id="oYM-6H-dpn"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="ResearchSuite" id="Ovh-H9-HUS"/>
                                 </items>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="barPosition">
@@ -46,14 +39,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="We'll let you know when it's time to take your next assessment" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5T-SR-oiD">
-                                <rect key="frame" x="100" y="302" width="174" height="62"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="We'll let you know when it's time to take your next survey" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5T-SR-oiD">
+                                <rect key="frame" x="100" y="302.5" width="174" height="62.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="174" id="i3l-Nj-9KM"/>
                                     <constraint firstAttribute="height" constant="62.5" id="qL8-bQ-DXv"/>
                                 </constraints>
-                                <color key="textColor" red="0.2176931201" green="0.6016751615" blue="0.87471367799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.54509803921568623" green="0.84313725490196079" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -67,9 +60,6 @@
                             <constraint firstItem="uN7-Cm-UhY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qmn-Xu-xtm"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="settingsButton" destination="KIT-8j-ExT" id="hAM-3i-Opg"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
