@@ -27,27 +27,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var ls2Manager: LS2Manager!
     var ls2Backend: LS2BackEnd!
     
-    
     @available(iOS 10.0, *)
     var center: UNUserNotificationCenter!{
         return UNUserNotificationCenter.current()
     }
-    
 
-
-    
     func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
         self.store.setValueInState(value: true as NSSecureCoding, forKey: "shouldDoSpot")
         let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let vc = storyboard.instantiateInitialViewController()
         self.transition(toRootViewController: vc!, animated: true)
     }
-    
-    func applicationDidFinishLaunching(_ application: UIApplication) {
-
-    }
-
-    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -105,7 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             self.center.delegate = self
             self.center.requestAuthorization(options: [UNAuthorizationOptions.sound ], completionHandler: { (granted, error) in
                 if error == nil{
-                    // UIApplication.shared.registerForRemoteNotifications()
+                    DateChecker.sharedDateChecker.scheduleNotification()
                 }
             })
         } else {
@@ -113,6 +103,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             UIApplication.shared.registerUserNotificationSettings(settings)
             
         }
+        
+
+        
         
         // Navigate to correct view controller
         self.showViewController(animated: false)

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UserNotifications
 
 enum Group: String {
     case Experimental_A = "Experimental_A"
@@ -16,6 +17,7 @@ enum Group: String {
 
 enum UserDefaultsKey: String {
     case FIRSTRUNTIME
+    case NOTFIRSTTIMERUN
 }
 
 //let baseline_test_duration = 3
@@ -23,10 +25,14 @@ let transform_date_month = 4
 let transform_date_day = 29
 let group_type: Group = .Experimental_A
 
+let fire_hour = 20
+let fire_minute = 42
+
 class DateChecker {
     static let sharedDateChecker = DateChecker()
     private let defaults = UserDefaults.standard
     private let calendar = NSCalendar.current
+    private let center = UNUserNotificationCenter.current()
     
 //    private func shouldTransform() -> Bool {
 //        if let firstRunTime = getFirstRunTime() {
@@ -72,6 +78,31 @@ class DateChecker {
         defaults.set(true, forKey: key)
     }
     
+    func scheduleNotification() {
+        if isFirstTimeRun() {
+            let content = UNMutableNotificationContent()
+            content.title = "Don't forget"
+            content.body = "It's time to finish your daily food survey"
+            content.sound = UNNotificationSound.default()
+            
+            var triggerDaily = DateComponents()
+            triggerDaily.hour = fire_hour
+            triggerDaily.minute = fire_minute
+            
+            let trigger = UNCalendarNotificationTrigger(dateMatching: triggerDaily, repeats: true)
+            
+            // Swift
+            let identifier = "BETechLocalNotification"
+            let request = UNNotificationRequest(identifier: identifier,
+                                                content: content, trigger: trigger)
+            center.add(request, withCompletionHandler: { (error) in
+                if let error = error {
+                    // Something went wrong
+                }
+            })
+        }
+    }
+    
 //    private func getFirstRunTime() -> Date? {
 //        if let firstRunTime = defaults.object(forKey: UserDefaultsKey.FIRSTRUNTIME.rawValue) as? Date {
 //            return firstRunTime
@@ -79,4 +110,13 @@ class DateChecker {
 //
 //        return nil
 //    }
+    
+    private func isFirstTimeRun() -> Bool {
+        let notFirstTimeRun = defaults.bool(forKey: UserDefaultsKey.NOTFIRSTTIMERUN.rawValue)
+        if !notFirstTimeRun {
+            return true
+        }
+        defaults.set(true, forKey: UserDefaultsKey.NOTFIRSTTIMERUN.rawValue)
+        return false
+    }
 }
