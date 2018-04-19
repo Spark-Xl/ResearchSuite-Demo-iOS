@@ -1,0 +1,318 @@
+{
+    "type": "recurring",
+    "identifier": "experiment_A",
+    "title": "YADL Full Intake Survey",
+    "guid": "experiment_A",
+    "activity": {
+        "type"      : "elementList",
+        "identifier": "experiment_A",
+        "optional": false,
+        "elements"   : [
+                        {
+                        "identifier"   : "introduction",
+                        "type"         : "instruction",
+                        "title"        : "Welcome to the Food Survey (Version A)",
+                        "text"         : "Please check all that apply"
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_apple",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have an Apple today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_apple",
+                                  "description":"Apple",
+                                  "identifier":"EXP_A_apple"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_avocado",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have an Avocado today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_avocado",
+                                  "description":"Avocado",
+                                  "identifier":"EXP_A_avocado"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_banana",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have a Banana today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_banana",
+                                  "description":"Banana",
+                                  "identifier":"EXP_A_banana"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_berries",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some berries today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_berries",
+                                  "description":"Berries",
+                                  "identifier":"EXP_A_berries"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_broccoli",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some broccolis today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_broccoli",
+                                  "description":"Broccoli",
+                                  "identifier":"EXP_A_broccoli"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_carrot",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some carrots today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_carrot",
+                                  "description":"Carrot",
+                                  "identifier":"EXP_A_carrot"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_kale",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some kales today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_kale",
+                                  "description":"Kale",
+                                  "identifier":"EXP_A_kale"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_lettuce",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some lettuce today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_lettuce",
+                                  "description":"Lettuce",
+                                  "identifier":"EXP_A_lettuce"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_orange",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have an orange today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_orange",
+                                  "description":"Orange",
+                                  "identifier":"EXP_A_orange"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_A_tomato",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have a tomato today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_A_tomato",
+                                  "description":"Tomato",
+                                  "identifier":"EXP_A_tomato"
+                                  }
+                                  ]
+                        }
+                        ]
+    },
+    "resultTransforms": [
+                         {
+                         "transform": "YADLFullRaw",
+                         "inputMapping": [
+                                          {"parameter":"EXP_A_apple", "stepIdentifier":"EXP_A_apple"},
+                                          {"parameter":"EXP_A_avocado", "stepIdentifier":"EXP_A_avocado"},
+                                          {"parameter":"EXP_A_banana", "stepIdentifier":"EXP_A_banana"},
+                                          {"parameter":"EXP_A_berries", "stepIdentifier":"EXP_A_berries"},
+                                          {"parameter":"EXP_A_broccoli", "stepIdentifier":"EXP_A_broccoli"},
+                                          {"parameter":"EXP_A_carrot", "stepIdentifier":"EXP_A_carrot"},
+                                          {"parameter":"EXP_A_kale", "stepIdentifier":"EXP_A_kale"},
+                                          {"parameter":"EXP_A_lettuce", "stepIdentifier":"EXP_A_lettuce"},
+                                          {"parameter":"EXP_A_orange", "stepIdentifier":"EXP_A_orange"},
+                                          {"parameter":"EXP_A_tomato", "stepIdentifier":"EXP_A_tomato"},
+                                          {"parameter":"EXP_B_burger", "stepIdentifier":"EXP_B_burger"},
+                                          {"parameter":"EXP_B_cake", "stepIdentifier":"EXP_B_cake"},
+                                          {"parameter":"EXP_B_chips", "stepIdentifier":"EXP_B_chips"},
+                                          {"parameter":"EXP_B_coke", "stepIdentifier":"EXP_B_coke"},
+                                          {"parameter":"EXP_B_cookies", "stepIdentifier":"EXP_B_cookies"},
+                                          {"parameter":"EXP_B_fried_chicken", "stepIdentifier":"EXP_B_fried_chicken"},
+                                          {"parameter":"EXP_B_fries", "stepIdentifier":"EXP_B_fries"},
+                                          {"parameter":"EXP_B_ice_cream", "stepIdentifier":"EXP_B_ice_cream"},
+                                          {"parameter":"EXP_B_pantry", "stepIdentifier":"EXP_B_pantry"},
+                                          {"parameter":"EXP_B_pizza", "stepIdentifier":"EXP_B_pizza"},
+                                          
+                                          {"parameter": "schemaID", "constant":{
+                                          "namespace": "Cornell",
+                                          "name": "yadl-full-assessment-dance",
+                                          "version": "1.0.0"
+                                          }
+                                          }
+                                          ]
+                         }
+                         
+                         
+                         
+                         
+                         
+                         ]
+}

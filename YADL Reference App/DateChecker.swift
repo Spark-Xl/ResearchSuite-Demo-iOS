@@ -8,10 +8,10 @@
 
 import Foundation
 
-enum Group {
-    case Experimental_A
-    case Experimental_B
-    case Control
+enum Group: String {
+    case Experimental_A = "Experimental_A"
+    case Experimental_B = "Experimental_B"
+    case Control = "Control"
 }
 
 enum UserDefaultsKey: String {

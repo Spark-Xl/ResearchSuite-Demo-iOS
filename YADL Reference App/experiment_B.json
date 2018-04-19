@@ -1,0 +1,320 @@
+{
+    "type": "recurring",
+    "identifier": "experiment_B",
+    "title": "YADL Full Intake Survey",
+    "guid": "experiment_B",
+    "activity": {
+        "type"      : "elementList",
+        "identifier": "experiment_B",
+        "optional": false,
+        "elements"   : [
+                        {
+                        "identifier"   : "introduction",
+                        "type"         : "instruction",
+                        "title"        : "Welcome to the Food Survey (Version B)",
+                        "text"         : "Please check all that apply"
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_burger",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have a Burger today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_burger",
+                                  "description":"Burger",
+                                  "identifier":"EXP_B_burger"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_cake",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have a cake today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_cake",
+                                  "description":"Cake",
+                                  "identifier":"EXP_B_cake"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_chips",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some chips today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_chips",
+                                  "description":"Chips",
+                                  "identifier":"EXP_B_chips"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_coke",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some Coke today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_coke",
+                                  "description":"Coke",
+                                  "identifier":"EXP_B_coke"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_cookies",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some cookies today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_cookies",
+                                  "description":"Cookies",
+                                  "identifier":"EXP_B_cookies"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_fried_chicken",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some fried chicken today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_fried_chicken",
+                                  "description":"Fried Chicken",
+                                  "identifier":"EXP_B_fried_chicken"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_fries",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some fries today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_fries",
+                                  "description":"Fries",
+                                  "identifier":"EXP_B_fries"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_ice_cream",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some ice cream today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_ice_cream",
+                                  "description":"Ice Cream",
+                                  "identifier":"EXP_B_ice_cream"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_pantry",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have some pantries today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_pantry",
+                                  "description":"Pantry",
+                                  "identifier":"EXP_B_pantry"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "EXP_B_pizza",
+                        "type": "YADLFullAssessment",
+                        "text": "Did you have a pizza today?",
+                        "choices":[
+                                   {
+                                   "text":"Yes",
+                                   "value":"0",
+                                   "color":"#258313"
+                                   },
+                                   {
+                                   "text":"No",
+                                   "value":"1",
+                                   "color":"#F0743E"
+                                   }
+                                   ],
+                        "imageExtension": "jpg",
+                        "items": [
+                                  {
+                                  "imageTitle":"EXP_B_pizza",
+                                  "description":"Pizza",
+                                  "identifier":"EXP_B_pizza"
+                                  }
+                                  ]
+                        }
+                        ]
+    },
+    "resultTransforms": [
+                         {
+                         "transform": "YADLFullRaw",
+                         "inputMapping": [
+                                          {"parameter":"EXP_A_apple", "stepIdentifier":"EXP_A_apple"},
+                                          {"parameter":"EXP_A_avocado", "stepIdentifier":"EXP_A_avocado"},
+                                          {"parameter":"EXP_A_banana", "stepIdentifier":"EXP_A_banana"},
+                                          {"parameter":"EXP_A_berries", "stepIdentifier":"EXP_A_berries"},
+                                          {"parameter":"EXP_A_broccoli", "stepIdentifier":"EXP_A_broccoli"},
+                                          {"parameter":"EXP_A_carrot", "stepIdentifier":"EXP_A_carrot"},
+                                          {"parameter":"EXP_A_kale", "stepIdentifier":"EXP_A_kale"},
+                                          {"parameter":"EXP_A_lettuce", "stepIdentifier":"EXP_A_lettuce"},
+                                          {"parameter":"EXP_A_orange", "stepIdentifier":"EXP_A_orange"},
+                                          {"parameter":"EXP_A_tomato", "stepIdentifier":"EXP_A_tomato"},
+                                          {"parameter":"EXP_B_burger", "stepIdentifier":"EXP_B_burger"},
+                                          {"parameter":"EXP_B_cake", "stepIdentifier":"EXP_B_cake"},
+                                          {"parameter":"EXP_B_chips", "stepIdentifier":"EXP_B_chips"},
+                                          {"parameter":"EXP_B_coke", "stepIdentifier":"EXP_B_coke"},
+                                          {"parameter":"EXP_B_cookies", "stepIdentifier":"EXP_B_cookies"},
+                                          {"parameter":"EXP_B_fried_chicken", "stepIdentifier":"EXP_B_fried_chicken"},
+                                          {"parameter":"EXP_B_fries", "stepIdentifier":"EXP_B_fries"},
+                                          {"parameter":"EXP_B_ice_cream", "stepIdentifier":"EXP_B_ice_cream"},
+                                          {"parameter":"EXP_B_pantry", "stepIdentifier":"EXP_B_pantry"},
+                                          {"parameter":"EXP_B_pizza", "stepIdentifier":"EXP_B_pizza"},
+                                          
+                                          {"parameter": "schemaID", "constant":{
+                                          "namespace": "Cornell",
+                                          "name": "yadl-full-assessment-dance",
+                                          "version": "1.0.0"
+                                          }
+                                          }
+                                          ]
+                         }
+                         
+                         
+                         
+                         
+                         
+                         ]
+}
+
+

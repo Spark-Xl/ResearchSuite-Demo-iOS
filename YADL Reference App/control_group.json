@@ -1,0 +1,179 @@
+{
+    "type": "recurring",
+    "identifier": "control_group",
+    "title": "YADL Full Intake Survey",
+    "guid": "control_group_GUID",
+    "activity": {
+        "type"      : "elementList",
+        "identifier": "control_group",
+        "elements"   : [
+                        {
+                        "identifier"   : "introduction",
+                        "type"         : "instruction",
+                        "title"        : "Welcome to the Food Survey (Control Group)",
+                        "text"         : "Please check all that apply"
+                        },
+                        
+                        {
+                        "identifier": "Control_apple",
+                        "type": "singleChoiceText",
+                        "text": "Did you have an Apple today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_avocado",
+                        "type": "singleChoiceText",
+                        "text": "Did you have an Avocado today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_banana",
+                        "type": "singleChoiceText",
+                        "text": "Did you have a Banana today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_berries",
+                        "type": "singleChoiceText",
+                        "text": "Did you have some berries today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_broccoli",
+                        "type": "singleChoiceText",
+                        "text": "Did you have some broccolis today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_carrot",
+                        "type": "singleChoiceText",
+                        "text": "Did you have some carrots today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_kale",
+                        "type": "singleChoiceText",
+                        "text": "Did you have some kales today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_lettuce",
+                        "type": "singleChoiceText",
+                        "text": "Did you have some lettuce today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_orange",
+                        "type": "singleChoiceText",
+                        "text": "Did you have an orange today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        },
+                        
+                        {
+                        "identifier": "Control_tomato",
+                        "type": "singleChoiceText",
+                        "text": "Did you have a tomato today?",
+                        "items": [
+                                  {
+                                  "prompt": "Yes",
+                                  "value": "0"
+                                  },
+                                  {
+                                  "prompt": "No",
+                                  "value": "1"
+                                  }
+                                  ]
+                        }
+                        ]
+    },
+    "resultTransforms": []
+}

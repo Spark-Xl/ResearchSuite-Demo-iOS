@@ -41,11 +41,14 @@ class MainViewController: UIViewController{
         if !dateChecker.shouldRunSurvey() {
             return
         }
+        
         switch dateChecker.groupType() {
         case .Control:
-            self.launchFoodSurveyAssessment(type: "B")
-        default:
-            self.launchFoodSurveyAssessment(type: "A")
+            launchFoodSurveyControlGroup()
+        case .Experimental_A:
+            launchFoodSurvey(type: "A")
+        case .Experimental_B:
+            launchFoodSurvey(type: "B")
         }
     }
     
@@ -59,8 +62,13 @@ class MainViewController: UIViewController{
         self.launchActivity(forItem: fullAssessmentItem)
     }
     
-    func launchFoodSurveyAssessment (type: String) {
-        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "food_survey_" + type)
+    func launchFoodSurvey(type: String) {
+        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "experiment_" + type)
+        self.launchActivity(forItem: fullAssessmentItem)
+    }
+    
+    func launchFoodSurveyControlGroup() {
+        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "control_group")
         self.launchActivity(forItem: fullAssessmentItem)
     }
     
