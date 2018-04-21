@@ -14,7 +14,6 @@ class FileUploader {
     let baseURLString = "https://slack.com/api/files.upload"
     let token = "xoxp-348703700373-348466047539-348024719761-9f5cfb5e46a5e305a25391919e88a153"
     let channel = "data"
-    let deviceId = UIDevice.current.identifierForVendor?.uuidString
     
     func stringify(json: Any) -> String {
         let options = JSONSerialization.WritingOptions.prettyPrinted

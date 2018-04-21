@@ -162,16 +162,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     open func showViewController(animated: Bool) {
         
-        if(signedIn()){
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let vc = storyboard.instantiateInitialViewController()
-            self.transition(toRootViewController: vc!, animated: animated)
-        }
-        else {
-            let storyboard = UIStoryboard(name: "WelcomeStoryboard", bundle: Bundle.main)
-            let vc = storyboard.instantiateInitialViewController()
-            self.transition(toRootViewController: vc!, animated: animated)
-        }
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = storyboard.instantiateInitialViewController()
+        self.transition(toRootViewController: vc!, animated: animated)
         
 
         

@@ -20,14 +20,6 @@ enum UserDefaultsKey: String {
     case NOTFIRSTTIMERUN
 }
 
-//let baseline_test_duration = 3
-let transform_date_month = 4
-let transform_date_day = 29
-let group_type: Group = .Experimental_A
-
-let fire_hour = 20
-let fire_minute = 42
-
 class DateChecker {
     static let sharedDateChecker = DateChecker()
     private let defaults = UserDefaults.standard

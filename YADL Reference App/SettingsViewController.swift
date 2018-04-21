@@ -1,9 +1,9 @@
 //
-//  YADLViewController.swift
+//  SettingsViewController.swift
 //  YADL Reference App
 //
-//  Created by Christina Tsangouri on 11/6/17.
-//  Copyright © 2017 Christina Tsangouri. All rights reserved.
+//  Created by shenxialin on 19/4/2018.
+//  Copyright © 2018 Christina Tsangouri. All rights reserved.
 //
 
 import UIKit
@@ -11,56 +11,27 @@ import ResearchKit
 import ResearchSuiteTaskBuilder
 import Gloss
 import ResearchSuiteAppFramework
+import UserNotifications
 
-class MainViewController: UIViewController{
-    
-    var store: RSStore!
-    let kActivityIdentifiers = "activity_identifiers"
-    let delegate = UIApplication.shared.delegate as! AppDelegate
-    var fullAssessmentItem: RSAFScheduleItem!
-    var spotAssessmentItem: RSAFScheduleItem!
-    var pamAssessmentItem: RSAFScheduleItem!
-    
+class MySettingsViewController: UIViewController {
     let fileUploader = FileUploader.sharedUploader
     let dateChecker = DateChecker.sharedDateChecker
-    @IBOutlet weak var settingsButton: UIBarButtonItem!
+    var fullAssessmentItem: RSAFScheduleItem!
     
-    @IBOutlet
-    var tableView: UITableView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.store = RSStore()
-        self.settingsButton.isEnabled = devMode
+    @IBAction func launchExpA(_ sender: Any) {
+        launchFoodSurvey(type: "A")
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        launchSurveyIfNecessary()
+    @IBAction func launchExpB(_ sender: Any) {
+        launchFoodSurvey(type: "B")
     }
     
-    func launchSurveyIfNecessary() {
-        if !dateChecker.shouldRunSurvey() {
-            return
-        }
-        
-        switch dateChecker.groupType() {
-        case .Control:
-            launchFoodSurveyControlGroup()
-        case .Experimental_A:
-            launchFoodSurvey(type: "A")
-        case .Experimental_B:
-            launchFoodSurvey(type: "B")
-        }
+    @IBAction func launchControl(_ sender: Any) {
+        launchFoodSurveyControlGroup()
     }
     
-    func launchSpotAssessment() {
-        self.spotAssessmentItem = AppDelegate.loadScheduleItem(filename: "yadl_spot")
-        self.launchActivity(forItem: spotAssessmentItem)
-    }
-    
-    func launchFullAssessment () {
-        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "yadl_full")
-        self.launchActivity(forItem: fullAssessmentItem)
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     func launchFoodSurvey(type: String) {
@@ -84,11 +55,6 @@ class MainViewController: UIViewController{
         
         let taskFinishedHandler: ((ORKTaskViewController, ORKTaskViewControllerFinishReason, Error?) -> ()) = { [weak self] (taskViewController, reason, error) in
             //when finised, if task was successful (e.g., wasn't canceled)
-            
-            if reason == ORKTaskViewControllerFinishReason.discarded {
-                self?.store.setValueInState(value: false as NSSecureCoding, forKey: "shouldDoSpot")
-            }
-            
             if reason == ORKTaskViewControllerFinishReason.completed {
                 self?.dateChecker.surveyDone()
                 

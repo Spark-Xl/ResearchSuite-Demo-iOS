@@ -41,6 +41,8 @@
 		F43504222086D2A100420A9B /* FileUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43504212086D2A100420A9B /* FileUploader.swift */; };
 		F435042720879EFC00420A9B /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F435042620879EFC00420A9B /* ORKESerialization.m */; };
 		F45EF040207DD5D4003075CF /* food_survey_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F45EF03F207DD5D4003075CF /* food_survey_B.json */; };
+		F46C92972088D2FC00C0D0A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46C92962088D2FC00C0D0A8 /* SettingsViewController.swift */; };
+		F46C92992088D4E300C0D0A8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46C92982088D4E300C0D0A8 /* Config.swift */; };
 		F47D1F4B2087CD3C001ED5DE /* DateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D1F4A2087CD3C001ED5DE /* DateChecker.swift */; };
 		F47D1F4D2087E83A001ED5DE /* experiment_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F47D1F4C2087E83A001ED5DE /* experiment_A.json */; };
 		F47D1F4F2087E852001ED5DE /* experiment_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F47D1F4E2087E852001ED5DE /* experiment_B.json */; };
@@ -102,6 +104,8 @@
 		F435042620879EFC00420A9B /* ORKESerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKESerialization.m; sourceTree = "<group>"; };
 		F435042820879F2800420A9B /* ORKESerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKESerialization.h; sourceTree = "<group>"; };
 		F45EF03F207DD5D4003075CF /* food_survey_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food_survey_B.json; sourceTree = "<group>"; };
+		F46C92962088D2FC00C0D0A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F46C92982088D4E300C0D0A8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F47D1F4A2087CD3C001ED5DE /* DateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateChecker.swift; sourceTree = "<group>"; };
 		F47D1F4C2087E83A001ED5DE /* experiment_A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = experiment_A.json; sourceTree = "<group>"; };
 		F47D1F4E2087E852001ED5DE /* experiment_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = experiment_B.json; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 				F435042820879F2800420A9B /* ORKESerialization.h */,
 				F435042520879EFC00420A9B /* YADL Reference App-Bridging-Header.h */,
 				F47D1F4A2087CD3C001ED5DE /* DateChecker.swift */,
+				F46C92962088D2FC00C0D0A8 /* SettingsViewController.swift */,
+				F46C92982088D4E300C0D0A8 /* Config.swift */,
 			);
 			name = Spark;
 			sourceTree = "<group>";
@@ -318,7 +324,7 @@
 				TargetAttributes = {
 					CF9907311FAFFAAD006149E7 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = E8AN4S9FD3;
+						DevelopmentTeam = WMRHBP75XK;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -536,10 +542,12 @@
 				CF698340201BA9B100552801 /* WelcomeViewController.swift in Sources */,
 				0A2AA9CD206AB95900566074 /* OMHTransformer.swift in Sources */,
 				F43504222086D2A100420A9B /* FileUploader.swift in Sources */,
+				F46C92972088D2FC00C0D0A8 /* SettingsViewController.swift in Sources */,
 				0A6601A9206C3D11005F5198 /* DemographicsDailyResult+OMHDatapoint.swift in Sources */,
 				0A6601A5206C3062005F5198 /* DefaultRawOMHDatapoint.swift in Sources */,
 				CFD434132007F1AE00CD7178 /* SetttingsViewController.swift in Sources */,
 				CF9907591FB0BB3F006149E7 /* RSStore.swift in Sources */,
+				F46C92992088D4E300C0D0A8 /* Config.swift in Sources */,
 				0A6601A7206C36F3005F5198 /* DemographicsSurveyResult.swift in Sources */,
 				0A660197206BF28D005F5198 /* LoginViewController.swift in Sources */,
 			);
@@ -682,7 +690,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = E8AN4S9FD3;
+				DEVELOPMENT_TEAM = WMRHBP75XK;
 				INFOPLIST_FILE = "YADL Reference App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -702,7 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = E8AN4S9FD3;
+				DEVELOPMENT_TEAM = WMRHBP75XK;
 				INFOPLIST_FILE = "YADL Reference App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

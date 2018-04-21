@@ -161,7 +161,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func signOut() {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
-        appDelegate?.signOut()
     }
     
     func launchActivity(forItem item: RSAFScheduleItem) {
