@@ -172,6 +172,12 @@
                                   "value": "1"
                                   }
                                   ]
+                        },
+                        
+                        {
+                        "identifier": "extra_question",
+                        "type": "textfield",
+                        "text": "If you had any fruits or vegetables not listed so far, please tell us in the input box below."
                         }
                         ]
     },

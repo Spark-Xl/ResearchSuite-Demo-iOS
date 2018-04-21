@@ -273,6 +273,12 @@
                                   "identifier":"EXP_B_pizza"
                                   }
                                   ]
+                        },
+                        
+                        {
+                        "identifier": "extra_question",
+                        "type": "textfield",
+                        "text": "Can you let us know what additional snacks, desserts or fast food you had today if any?"
                         }
                         ]
     },

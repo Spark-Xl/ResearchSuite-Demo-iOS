@@ -27,7 +27,7 @@ class MySettingsViewController: UIViewController {
     }
     
     @IBAction func launchControl(_ sender: Any) {
-        launchFoodSurveyControlGroup()
+        launchFoodSurveyControlGroup(type: "A")
     }
     
     @IBAction func back(_ sender: Any) {
@@ -39,8 +39,8 @@ class MySettingsViewController: UIViewController {
         self.launchActivity(forItem: fullAssessmentItem)
     }
     
-    func launchFoodSurveyControlGroup() {
-        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "control_group")
+    func launchFoodSurveyControlGroup(type: String) {
+        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "baseline_" + type)
         self.launchActivity(forItem: fullAssessmentItem)
     }
     

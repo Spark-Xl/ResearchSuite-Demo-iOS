@@ -44,7 +44,7 @@ class MainViewController: UIViewController{
         }
         
         switch dateChecker.groupType() {
-        case .Baseline_A:
+        case .Control:
             launchFoodSurveyControlGroup(type: "A")
         case .Baseline_B:
             launchFoodSurveyControlGroup(type: "B")
