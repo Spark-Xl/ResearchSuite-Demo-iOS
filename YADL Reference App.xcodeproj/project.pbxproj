@@ -40,14 +40,14 @@
 		F41E42C3207DD3A500893393 /* food_survey_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F41E42C2207DD3A500893393 /* food_survey_A.json */; };
 		F43504222086D2A100420A9B /* FileUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43504212086D2A100420A9B /* FileUploader.swift */; };
 		F435042720879EFC00420A9B /* ORKESerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F435042620879EFC00420A9B /* ORKESerialization.m */; };
-		F43A8C48208AC55F00756385 /* control_group_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F43A8C47208AC55F00756385 /* control_group_B.json */; };
+		F43A8C48208AC55F00756385 /* baseline_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F43A8C47208AC55F00756385 /* baseline_B.json */; };
 		F45EF040207DD5D4003075CF /* food_survey_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F45EF03F207DD5D4003075CF /* food_survey_B.json */; };
 		F46C92972088D2FC00C0D0A8 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46C92962088D2FC00C0D0A8 /* SettingsViewController.swift */; };
 		F46C92992088D4E300C0D0A8 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46C92982088D4E300C0D0A8 /* Config.swift */; };
 		F47D1F4B2087CD3C001ED5DE /* DateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47D1F4A2087CD3C001ED5DE /* DateChecker.swift */; };
 		F47D1F4D2087E83A001ED5DE /* experiment_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F47D1F4C2087E83A001ED5DE /* experiment_A.json */; };
 		F47D1F4F2087E852001ED5DE /* experiment_B.json in Resources */ = {isa = PBXBuildFile; fileRef = F47D1F4E2087E852001ED5DE /* experiment_B.json */; };
-		F47D1F51208811BE001ED5DE /* control_group_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F47D1F50208811BE001ED5DE /* control_group_A.json */; };
+		F47D1F51208811BE001ED5DE /* baseline_A.json in Resources */ = {isa = PBXBuildFile; fileRef = F47D1F50208811BE001ED5DE /* baseline_A.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,14 +104,14 @@
 		F435042520879EFC00420A9B /* YADL Reference App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YADL Reference App-Bridging-Header.h"; sourceTree = "<group>"; };
 		F435042620879EFC00420A9B /* ORKESerialization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORKESerialization.m; sourceTree = "<group>"; };
 		F435042820879F2800420A9B /* ORKESerialization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORKESerialization.h; sourceTree = "<group>"; };
-		F43A8C47208AC55F00756385 /* control_group_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = control_group_B.json; sourceTree = "<group>"; };
+		F43A8C47208AC55F00756385 /* baseline_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = baseline_B.json; sourceTree = "<group>"; };
 		F45EF03F207DD5D4003075CF /* food_survey_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food_survey_B.json; sourceTree = "<group>"; };
 		F46C92962088D2FC00C0D0A8 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		F46C92982088D4E300C0D0A8 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		F47D1F4A2087CD3C001ED5DE /* DateChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateChecker.swift; sourceTree = "<group>"; };
 		F47D1F4C2087E83A001ED5DE /* experiment_A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = experiment_A.json; sourceTree = "<group>"; };
 		F47D1F4E2087E852001ED5DE /* experiment_B.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = experiment_B.json; sourceTree = "<group>"; };
-		F47D1F50208811BE001ED5DE /* control_group_A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = control_group_A.json; sourceTree = "<group>"; };
+		F47D1F50208811BE001ED5DE /* baseline_A.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = baseline_A.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,8 +240,8 @@
 				0A6601AA206C4FAF005F5198 /* LocationSurvey.json */,
 				F47D1F4C2087E83A001ED5DE /* experiment_A.json */,
 				F47D1F4E2087E852001ED5DE /* experiment_B.json */,
-				F47D1F50208811BE001ED5DE /* control_group_A.json */,
-				F43A8C47208AC55F00756385 /* control_group_B.json */,
+				F47D1F50208811BE001ED5DE /* baseline_A.json */,
+				F43A8C47208AC55F00756385 /* baseline_B.json */,
 			);
 			name = json;
 			sourceTree = "<group>";
@@ -375,12 +375,12 @@
 				CF698344201BA9DF00552801 /* WelcomeStoryboard.storyboard in Resources */,
 				F45EF040207DD5D4003075CF /* food_survey_B.json in Resources */,
 				0A2AA9CB206AA89600566074 /* signin.json in Resources */,
-				F43A8C48208AC55F00756385 /* control_group_B.json in Resources */,
+				F43A8C48208AC55F00756385 /* baseline_B.json in Resources */,
 				CF0A6E571FB15323005ADC8F /* notification.json in Resources */,
 				CF99075C1FB0BB72006149E7 /* sample.json in Resources */,
 				CF9907651FB0C3F1006149E7 /* MEDL.json in Resources */,
 				0A66019F206C2B63005F5198 /* pam.json in Resources */,
-				F47D1F51208811BE001ED5DE /* control_group_A.json in Resources */,
+				F47D1F51208811BE001ED5DE /* baseline_A.json in Resources */,
 				CF99073D1FAFFAAE006149E7 /* YADL.xcassets in Resources */,
 				F47D1F4F2087E852001ED5DE /* experiment_B.json in Resources */,
 				CF9907601FB0BE6D006149E7 /* yadl_full.json in Resources */,
