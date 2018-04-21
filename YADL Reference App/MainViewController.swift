@@ -44,8 +44,10 @@ class MainViewController: UIViewController{
         }
         
         switch dateChecker.groupType() {
-        case .Control:
-            launchFoodSurveyControlGroup()
+        case .Control_A:
+            launchFoodSurveyControlGroup(type: "A")
+        case .Control_B:
+            launchFoodSurveyControlGroup(type: "B")
         case .Experimental_A:
             launchFoodSurvey(type: "A")
         case .Experimental_B:
@@ -68,8 +70,8 @@ class MainViewController: UIViewController{
         self.launchActivity(forItem: fullAssessmentItem)
     }
     
-    func launchFoodSurveyControlGroup() {
-        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "control_group")
+    func launchFoodSurveyControlGroup(type: String) {
+        self.fullAssessmentItem = AppDelegate.loadScheduleItem(filename: "control_group_" + type)
         self.launchActivity(forItem: fullAssessmentItem)
     }
     

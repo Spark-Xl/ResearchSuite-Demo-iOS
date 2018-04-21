@@ -1,23 +1,23 @@
 {
     "type": "recurring",
-    "identifier": "control_group",
+    "identifier": "control_group_B",
     "title": "YADL Full Intake Survey",
-    "guid": "control_group_GUID",
+    "guid": "control_group_B_GUID",
     "activity": {
         "type"      : "elementList",
-        "identifier": "control_group",
+        "identifier": "control_group_B",
         "elements"   : [
                         {
                         "identifier"   : "introduction",
                         "type"         : "instruction",
-                        "title"        : "Welcome to the Food Survey (Control Group)",
+                        "title"        : "Welcome to the Food Survey (Control Group B)",
                         "text"         : "Please check all that apply"
                         },
                         
                         {
-                        "identifier": "Control_apple",
+                        "identifier": "Control_burger",
                         "type": "singleChoiceText",
-                        "text": "Did you have an Apple today?",
+                        "text": "Did you have a Burger today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -31,9 +31,9 @@
                         },
                         
                         {
-                        "identifier": "Control_avocado",
+                        "identifier": "Control_cake",
                         "type": "singleChoiceText",
-                        "text": "Did you have an Avocado today?",
+                        "text": "Did you have a cake today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -47,9 +47,9 @@
                         },
                         
                         {
-                        "identifier": "Control_banana",
+                        "identifier": "Control_chips",
                         "type": "singleChoiceText",
-                        "text": "Did you have a Banana today?",
+                        "text": "Did you have some chips today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -63,9 +63,9 @@
                         },
                         
                         {
-                        "identifier": "Control_berries",
+                        "identifier": "Control_coke",
                         "type": "singleChoiceText",
-                        "text": "Did you have some berries today?",
+                        "text": "Did you have some Coke today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -79,9 +79,9 @@
                         },
                         
                         {
-                        "identifier": "Control_broccoli",
+                        "identifier": "Control_cookies",
                         "type": "singleChoiceText",
-                        "text": "Did you have some broccolis today?",
+                        "text": "Did you have some cookies today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -95,9 +95,9 @@
                         },
                         
                         {
-                        "identifier": "Control_carrot",
+                        "identifier": "Control_fried_chicken",
                         "type": "singleChoiceText",
-                        "text": "Did you have some carrots today?",
+                        "text": "Did you have some fried chicken today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -111,9 +111,9 @@
                         },
                         
                         {
-                        "identifier": "Control_kale",
+                        "identifier": "Control_fries",
                         "type": "singleChoiceText",
-                        "text": "Did you have some kales today?",
+                        "text": "Did you have some fries today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -127,9 +127,9 @@
                         },
                         
                         {
-                        "identifier": "Control_lettuce",
+                        "identifier": "Control_ice_cream",
                         "type": "singleChoiceText",
-                        "text": "Did you have some lettuce today?",
+                        "text": "Did you have some ice cream today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -143,9 +143,9 @@
                         },
                         
                         {
-                        "identifier": "Control_orange",
+                        "identifier": "Control_pantry",
                         "type": "singleChoiceText",
-                        "text": "Did you have an orange today?",
+                        "text": "Did you have some pantries today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -159,9 +159,9 @@
                         },
                         
                         {
-                        "identifier": "Control_tomato",
+                        "identifier": "Control_pizza",
                         "type": "singleChoiceText",
-                        "text": "Did you have a tomato today?",
+                        "text": "Did you have a pizza today?",
                         "items": [
                                   {
                                   "prompt": "Yes",

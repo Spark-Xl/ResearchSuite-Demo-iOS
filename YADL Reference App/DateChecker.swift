@@ -12,7 +12,8 @@ import UserNotifications
 enum Group: String {
     case Experimental_A = "Experimental_A"
     case Experimental_B = "Experimental_B"
-    case Control = "Control"
+    case Control_A = "Control_A"
+    case Control_B = "Control_B"
 }
 
 enum UserDefaultsKey: String {
@@ -54,7 +55,10 @@ class DateChecker {
         if shouldTransform() {
             return group_type
         }
-        return .Control
+        if group_type == .Experimental_A {
+            return .Control_A
+        }
+        return .Control_B
     }
     
     func shouldRunSurvey() -> Bool {
