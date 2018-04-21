@@ -18,7 +18,7 @@
                         {
                         "identifier": "EXP_B_burger",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have a Burger today?",
+                        "text": "Did you have a hamburger today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -44,7 +44,7 @@
                         {
                         "identifier": "EXP_B_cake",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have a cake today?",
+                        "text": "Did you have a piece of cake today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -96,7 +96,7 @@
                         {
                         "identifier": "EXP_B_coke",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have some Coke today?",
+                        "text": "Did you have a sweetened beverage today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -148,7 +148,7 @@
                         {
                         "identifier": "EXP_B_fried_chicken",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have some fried chicken today?",
+                        "text": "Did you have some tasty fried chicken today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -226,7 +226,7 @@
                         {
                         "identifier": "EXP_B_pantry",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have some pantries today?",
+                        "text": "Did you have some pastries today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -252,7 +252,7 @@
                         {
                         "identifier": "EXP_B_pizza",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have a pizza today?",
+                        "text": "Did you have a slice of pizza today?",
                         "choices":[
                                    {
                                    "text":"Yes",

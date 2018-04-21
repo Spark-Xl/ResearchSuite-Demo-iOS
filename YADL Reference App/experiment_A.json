@@ -18,7 +18,7 @@
                         {
                         "identifier": "EXP_A_apple",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have an Apple today?",
+                        "text": "Did you have an apple today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -44,7 +44,7 @@
                         {
                         "identifier": "EXP_A_avocado",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have an Avocado today?",
+                        "text": "Did you have an avocado today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -70,7 +70,7 @@
                         {
                         "identifier": "EXP_A_banana",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have a Banana today?",
+                        "text": "Did you have a banana today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -122,7 +122,7 @@
                         {
                         "identifier": "EXP_A_broccoli",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have some broccolis today?",
+                        "text": "Did you have some broccoli today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -148,7 +148,7 @@
                         {
                         "identifier": "EXP_A_carrot",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have some carrots today?",
+                        "text": "Did you eat some carrots today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -174,7 +174,7 @@
                         {
                         "identifier": "EXP_A_kale",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have some kales today?",
+                        "text": "Did you eat some kale today?",
                         "choices":[
                                    {
                                    "text":"Yes",
@@ -252,7 +252,7 @@
                         {
                         "identifier": "EXP_A_tomato",
                         "type": "YADLFullAssessment",
-                        "text": "Did you have a tomato today?",
+                        "text": "Did you eat some tomatoes today?",
                         "choices":[
                                    {
                                    "text":"Yes",

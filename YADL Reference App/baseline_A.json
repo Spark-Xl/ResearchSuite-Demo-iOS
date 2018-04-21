@@ -17,7 +17,7 @@
                         {
                         "identifier": "Control_apple",
                         "type": "singleChoiceText",
-                        "text": "Did you have an Apple today?",
+                        "text": "Did you have an apple today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -33,7 +33,7 @@
                         {
                         "identifier": "Control_avocado",
                         "type": "singleChoiceText",
-                        "text": "Did you have an Avocado today?",
+                        "text": "Did you have an avocado today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -49,7 +49,7 @@
                         {
                         "identifier": "Control_banana",
                         "type": "singleChoiceText",
-                        "text": "Did you have a Banana today?",
+                        "text": "Did you have a banana today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -81,7 +81,7 @@
                         {
                         "identifier": "Control_broccoli",
                         "type": "singleChoiceText",
-                        "text": "Did you have some broccolis today?",
+                        "text": "Did you have some broccoli today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -97,7 +97,7 @@
                         {
                         "identifier": "Control_carrot",
                         "type": "singleChoiceText",
-                        "text": "Did you have some carrots today?",
+                        "text": "Did you eat some carrots today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -113,7 +113,7 @@
                         {
                         "identifier": "Control_kale",
                         "type": "singleChoiceText",
-                        "text": "Did you have some kales today?",
+                        "text": "Did you eat some kale today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -161,7 +161,7 @@
                         {
                         "identifier": "Control_tomato",
                         "type": "singleChoiceText",
-                        "text": "Did you have a tomato today?",
+                        "text": "Did you eat some tomatoes today?",
                         "items": [
                                   {
                                   "prompt": "Yes",

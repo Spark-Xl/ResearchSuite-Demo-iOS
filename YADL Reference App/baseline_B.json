@@ -17,7 +17,7 @@
                         {
                         "identifier": "Control_burger",
                         "type": "singleChoiceText",
-                        "text": "Did you have a Burger today?",
+                        "text": "Did you have a hamburger today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -33,7 +33,7 @@
                         {
                         "identifier": "Control_cake",
                         "type": "singleChoiceText",
-                        "text": "Did you have a cake today?",
+                        "text": "Did you have a piece of cake today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -65,7 +65,7 @@
                         {
                         "identifier": "Control_coke",
                         "type": "singleChoiceText",
-                        "text": "Did you have some Coke today?",
+                        "text": "Did you have a sweetened beverage today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -97,7 +97,7 @@
                         {
                         "identifier": "Control_fried_chicken",
                         "type": "singleChoiceText",
-                        "text": "Did you have some fried chicken today?",
+                        "text": "Did you have some tasty fried chicken today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -145,7 +145,7 @@
                         {
                         "identifier": "Control_pantry",
                         "type": "singleChoiceText",
-                        "text": "Did you have some pantries today?",
+                        "text": "Did you have some pastries today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
@@ -161,7 +161,7 @@
                         {
                         "identifier": "Control_pizza",
                         "type": "singleChoiceText",
-                        "text": "Did you have a pizza today?",
+                        "text": "Did you have a slice of pizza today?",
                         "items": [
                                   {
                                   "prompt": "Yes",
