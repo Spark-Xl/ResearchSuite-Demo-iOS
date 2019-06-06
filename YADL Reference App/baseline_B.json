@@ -10,7 +10,7 @@
                         {
                         "identifier"   : "introduction",
                         "type"         : "instruction",
-                        "title"        : "Welcome to the Food Survey (Baseline B)",
+                        "title"        : "Welcome to the Food Survey",
                         "text"         : "Please check all that apply"
                         },
                         

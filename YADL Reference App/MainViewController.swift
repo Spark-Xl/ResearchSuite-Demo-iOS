@@ -35,7 +35,7 @@ class MainViewController: UIViewController{
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        launchSurveyIfNecessary()
+//        launchSurveyIfNecessary()
     }
     
     func launchSurveyIfNecessary() {

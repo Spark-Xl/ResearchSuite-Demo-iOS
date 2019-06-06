@@ -67,7 +67,8 @@ class DateChecker {
         let current = getDayAndMonth()
         let key = "key_\(100*current.1 + current.0)"
         let finished = defaults.bool(forKey: key)
-        return !finished
+//        return !finished
+        return true
     }
     
     func surveyDone() {
